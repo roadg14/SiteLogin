@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,36 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./Js/Script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;1,200&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Sou nigga</h1>
+    <header>
+        <a href="#"><h1>Quiz Number </h1></a>
+    </header>
+
+    <main class="container">
+        <form>
+            <label for="kick">Digite um número (0 - 20):</label>
+            <input type="number" id="kick" max="20" placeholder="0">
+
+            <button type="submit">Jogar!</button>
+        </form>
+
+        <section class="result-box" id="result">
+            <h2 id="status">Adivinhe o numero escolhido</h2>
+            <span id="attempt">Tentativas: 0</span>
+        </section>
+
+        <button id="btnRestart">Jogar de novo!</button>
+    
+    </main>
+
+    <footer>
+        <p>Quiz Number, 2022 &copy;</p>
+    </footer>
 </body>
 </html>
